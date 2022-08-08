@@ -1,7 +1,7 @@
 # PlayFlac
 
 The plugin let's you play .flac audio files in [Revolt](https://github.com/revoltchat)<br/>
-
+![Screenshot](https://raw.githubusercontent.com/Peleret/RevoltChatPlugins/main/PlayFlac.png)
 
 ## Installation
 Due to experimental state of plugin support in Revolt the installation method is unnatural<br/>
