@@ -1,6 +1,6 @@
 async () => {
 	const r = document.createElement('style');
-	r.innerHTML = "audio::-webkit-media-controls-enclosure{border-radius:16px} audio{filter:hue-rotate(196deg) saturate(350%) invert(100%) contrast(105%);width:min(calc(87vw - 300px),505px)}";
+	r.innerHTML = "audio::-webkit-media-controls-enclosure{border-radius:16px} audio{filter:hue-rotate(196deg) saturate(350%) invert(100%) contrast(105%);width:100%}";
 	document.body.appendChild(r);
 	while(1){
 		let files = document.querySelectorAll("[class*=downloadIcon]");
@@ -16,8 +16,9 @@ async () => {
 			audio.setAttribute("controls", "");
 			audio.setAttribute("src", e.href);
 			let text = document.createElement("p");
-			text.setAttribute("style", "color: var(--secondary-foreground);text-align: center;width: min(505px);margin: 0px auto 5px;font-size: 1.1em;");
+			text.setAttribute("style", "color: var(--secondary-foreground);text-align: center;margin: 0px auto 5px;font-size: 1.1em;");
 			text.textContent = e.parentElement.children[1].textContent.substr(0,e.parentElement.children[1].textContent.length-5);
+			element.setAttribute('style','grid-auto-columns:100%;max-width:504px;width:100%');
 			element.appendChild(text);
 			element.appendChild(audio);
 			element.firstChild.setAttribute("style","display: none");
