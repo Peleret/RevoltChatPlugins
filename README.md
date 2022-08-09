@@ -35,3 +35,5 @@ Running this plugin in mobile app is possible but a bit hacky. <br/>
 5. Paste **`state.plugins.add({format:1,version:"0.0.1",namespace:"Peleret",id:"PlayFlac",entrypoint:`\`X\``})`**, but instead of **X** paste the contents of **PlayFlac.revolt.js** (Keep the backticks **\`\`** )
 6. Try restarting the Revolt app and if it didn't work delete try restarting your phone
 Also don't forget to enable plugin support in Experiments tab
+##### Explanation
+The mobile version of the app uses your default browser as engine for some reason so we just add the plugin to the browser version of the app and it somehow works (might be patched in the future)
