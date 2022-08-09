@@ -24,3 +24,14 @@ The plugin saves volume levels between files.<br/><br/>
 - Audio player does not respect your theme. (the only way to change colors of audio player icons is to write your own audio player which is too complex for this project for now)
 - The plugins uses infinite loop that runs every second which is not optimal (lack of documentation)
 - The plugin does not stop when disabled/removed [requires restart] (lack of documentation)
+<br/><br/>
+
+### Advanced
+Running this plugin in mobile app is possible but a bit hacky. <br/>
+1. First you are going to need to install **Kiwi Browser** or other browser that supports dev tools.
+2. Then set that browser as your default browser
+3. Open Revolt in that browser
+4. Go into dev tools
+5. Paste **`state.plugins.add({format:1,version:"0.0.1",namespace:"Peleret",id:"PlayFlac",entrypoint:`X`})`**, but instead of **X** paste the contents of **PlayFlac.revolt.js**.
+6. Try restarting the Revolt app a couple times and if it didn't work delete the plugin in browser version of the app and try again
+Also don't forget to enable plugin support in Experiments tab
