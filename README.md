@@ -23,7 +23,7 @@ The plugin saves volume levels between files.<br/><br/>
 - Audio player does not respect your theme. (the only way to change colors of audio player icons is to write your own audio player which is too complex for this project for now)
 - The plugins uses infinite loop that runs every second which is not optimal (lack of documentation)
 - The plugin does not stop when disabled/removed \[requires restart] (lack of documentation)
-<br/><br/><br/><br/>
+<br/><br/><br/>
 
 # PlayAllVideos
 
