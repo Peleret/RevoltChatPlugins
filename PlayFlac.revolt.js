@@ -29,4 +29,4 @@ state.plugins.add({format:1,version:"0.0.2",namespace:"Peleret",id:"PlayFlac",en
 			}
 		}
 	}
-`
+`})

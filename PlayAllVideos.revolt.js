@@ -31,4 +31,4 @@ state.plugins.add({format:1,version:"0.0.1",namespace:"Peleret",id:"PlayAllVideo
 			}
 		}
 	}
-`
+`})
