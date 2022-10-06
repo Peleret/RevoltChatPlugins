@@ -3,13 +3,13 @@ async () => {
 	r.innerHTML = "audio::-webkit-media-controls-enclosure{border-radius:16px} audio{filter:hue-rotate(196deg) saturate(350%) invert(100%) contrast(105%);width:100%}";
 	document.body.appendChild(r);
 	while(1){
-		let files = document.querySelectorAll("[class*=downloadIcon]");
+		let files = document.querySelectorAll(":not(.checkedForFlac)[class*=downloadIcon]");
 		if(!files[0]){
 			await new Promise(r => setTimeout(r, 1000));
 			continue;
 		}
 		for(const e of files){
-			e.className = "";
+			e.classList.add("checkedForFlac");
 			if(e.parentElement.children[1].textContent.substr(-5) !== ".flac") continue;
 			const element = e.parentElement.parentElement;
 			let audio = document.createElement("audio");
