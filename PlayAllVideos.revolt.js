@@ -1,4 +1,4 @@
-state.plugins.add({format:1,version:"0.0.1",namespace:"Peleret",id:"PlayAllVideos",entrypoint:await `
+state.plugins.add({format:1,version:"0.0.1",namespace:"Peleret",id:"PlayAllVideos",entrypoint:`
 	async () => {
 		const videoExtensions = [".webm", ".mp4", ".mkv", ".hls", ".mov", ".mpeg4", ".quicktime"];
 		while(1){
