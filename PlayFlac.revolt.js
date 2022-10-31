@@ -1,7 +1,7 @@
-state.plugins.add({format:1,version:"0.0.2",namespace:"Peleret",id:"PlayFlac",entrypoint:`
+state.plugins.add({format:1,version:"0.0.2b",namespace:"Peleret",id:"PlayFlac",entrypoint:`
 	async () => {
 		const r = document.createElement('style');
-		r.innerHTML = "audio::-webkit-media-controls-enclosure{border-radius:16px} audio{filter:hue-rotate(196deg) saturate(350%) invert(100%) contrast(105%);width:100%}";
+		r.innerHTML = "audio::-webkit-media-controls-enclosure{border-radius:16px} audio{filter:hue-rotate(196deg) saturate(350%) invert(100%) contrast(93%);width:100%}";
 		document.body.appendChild(r);
 		while(1){
 			let files = document.querySelectorAll(":not(.checkedForFlac)[class*=downloadIcon]");
