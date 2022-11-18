@@ -1,4 +1,4 @@
-state.plugins.add({format:1,version:"0.0.2",namespace:"Peleret",id:"PlayAllVideos",entrypoint:`
+state.plugins.add({format:1,version:"0.0.3",namespace:"Peleret",id:"PlayAllVideos",entrypoint:`
 	async () => {
 		const videoExtensions = [".webm", ".mp4", ".mkv", ".hls", ".mov", ".mpeg4", ".quicktime"];
 		while(1){
@@ -11,7 +11,7 @@ state.plugins.add({format:1,version:"0.0.2",namespace:"Peleret",id:"PlayAllVideo
 				e.classList.add("checkedForVideo");
 				let string = e.parentElement.children[1].textContent;
 				if(!videoExtensions.includes(string.substring(string.lastIndexOf(".")))) continue;
-				if(temp1.parentElement.parentElement.children[1].children[0].tagName=="VIDEO") continue;
+				if(e.parentElement.parentElement.childElementCount!=1) continue;
 				const element = e.parentElement.parentElement;
 				let video = document.createElement("video");
 				video.setAttribute("controls", "");
