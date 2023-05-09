@@ -11,7 +11,7 @@ state.plugins.add({format:1,version:"0.0.2b",namespace:"Peleret",id:"PlayFlac",e
 			}
 			for(const e of files){
 				e.classList.add("checkedForFlac");
-				if(e.parentElement.children[1].textContent.substr(-5) !== ".flac") continue;
+				if(e.parentElement.children[1].textContent.substr(-5) !== ".flac" && e.parentElement.children[1].textContent.substr(-5) !== ".opus") continue;
 				const element = e.parentElement.parentElement;
 				let audio = document.createElement("audio");
 				audio.setAttribute("controls", "");
